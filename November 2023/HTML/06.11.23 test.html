@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title?</title>
+</head>
+<body>
+<script type="text/javascript">
+    // we don't need the text type but we should/need it if we're working with multiple script languages
+    // silly code to demonstrate output
+    document.write("Hello!");
+    document.write("<p> <b>How are</b> <br>"+
+                   "<i>you</i>?</p>");
+
+    var x, y;
+    x = 1024;
+    y = x; x= "foobar";
+    document.write("<p> y = " + y + "</p>")
+    document.write("<p> x = " + x + "</p>")
+    //  javascript is not type specific, meaning that the int can become a string
+    // if you don't specify the type it will reserve 100 digits of space even if the var is just 2
+
+    user_name = prompt("What is your name?", "");
+    user_age = prompt("Your age?", "");
+    user_age = parseFloat(user_age)
+    //user_age = parseFloat(prompt("Your age?", ""));
+    //this works as well for shorter code
+    document.write("Hello " + user_name + ".")
+    if (user_age < 18) {
+        document.write(" Do your parents know " +
+        "you are online?");
+    }
+
+
+
+</script>
+<p>Welcome to Testland</p>
+</body>
+</html>
